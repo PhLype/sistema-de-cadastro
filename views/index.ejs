@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div id="errors"></div>
+    <div id="success"></div>
+    <h1 style="display: flex;flex-direction: column;align-items: center;justify-content: center;padding: 50px 0 0 0;">Sistema para Cadastrar Produtos!</h1>
+    <div class="container">
+        <input id="inpProductName" type="text" placeholder="Nome do Produto">
+        <input id="inpProductDesc" type="text" placeholder="Descrição do Produto">
+        <input id="inpProductAmount" type="number" placeholder="Valor do Produto">
+        <button id="btnProductAdd"><i class='bx bx-plus'></i></button>
+    </div>
+    <div id="divTable">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="inputsEdit">
+                <input id="inpProductNameUpdate" type="text" placeholder="Novo nome do Produto">
+                <input id="inpProductDescUpdate" type="text" placeholder="Nova descrição do Produto">
+                <input id="inpProductAmountUpdate" type="number" placeholder="Novo valor do Produto">
+                <button id="btnProductUpdate"><i class='bx bx-save'></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>

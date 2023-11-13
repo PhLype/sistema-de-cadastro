@@ -1,0 +1,94 @@
+body {
+    background-color: #f7f7f7;
+    color: #000;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+}
+
+input[type=number] {
+    width: 150px;
+    height: 30px;
+}
+
+button#btnProductAdd {
+    width: 40px;
+    height: 30px;
+    background-color: #00627a;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+input, button#btnProductAdd {
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 2px;
+    outline: none;
+}
+
+input, button:focus {
+    outline: none;
+}
+
+#divTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+th {
+    text-align: start;
+    border-bottom: inset;
+    padding-bottom: 5px;
+}
+
+#errors span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: red;
+    color: white;
+}
+
+#success span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #17cf17;
+    color: white;
+}
+
+tbody {
+    text-align: start;
+    font-size: 17px;
+}
+
+.columnAction > button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
